@@ -14,7 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/user', function () {
+    $response = 'test string response';
+    return $response;
+});
+
+/*
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return 'test success';
     //return $request->user();
 });
+*/
