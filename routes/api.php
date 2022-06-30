@@ -14,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/user', function () {
-    $response = 'test string response';
-    return $response;
+Route::get('/user', function (Request $request) {
+    return new \Illuminate\Http\JsonReponse([
+        'data' => 'test string response'
+    ]);
 });
 
 /*
