@@ -16,9 +16,12 @@ use Illuminate\Http\JsonReponse;
 */
 
 Route::get('/user', function (Request $request) {
+    return 'test string response';
+    /*
     return new \Illuminate\Http\JsonReponse([
         'data' => 'test string response'
     ]);
+    */
 });
 
 /*
