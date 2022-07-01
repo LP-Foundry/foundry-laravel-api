@@ -43,11 +43,7 @@ Route::get('/internal-user', function () {
 #Route::put('/user/{user}', 'UserController@update');
 #Route::delete('/user/{user}', 'UserController@destroy');
 
-Route::post('/user', function (Request $request) {
-    return 'post to /user';
-});
-
-#Route::resource('user', 'UserController');
+Route::resource('user', 'UserController');
 
 #Route::get('/user', 'UserController@index');
 #Route::post('/user', 'UserController@store');
