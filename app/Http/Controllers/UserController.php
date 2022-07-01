@@ -11,7 +11,7 @@ use App\User;
 
 class UserController extends Controller
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    #use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     
     /**
      * Display a listing of the resource.
