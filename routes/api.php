@@ -37,13 +37,17 @@ Route::get('/internal-user', function () {
 });
 */
 
-Route::get('/user', 'UserController@index');
-Route::get('/user/{user}', 'UserController@show');
-Route::post('/user', 'UserController@store');
-Route::put('/user/{user}', 'UserController@update');
-Route::delete('/user/{user}', 'UserController@destroy');
+#Route::get('/user', 'UserController@index');
+#Route::get('/user/{user}', 'UserController@show');
+#Route::post('/user', 'UserController@store');
+#Route::put('/user/{user}', 'UserController@update');
+#Route::delete('/user/{user}', 'UserController@destroy');
 
-#Route::resource('users', 'UserController');
+Route::post('/user', function (Request $request) {
+    return 'post to /user';
+});
+
+#Route::resource('user', 'UserController');
 
 #Route::get('/user', 'UserController@index');
 #Route::post('/user', 'UserController@store');
