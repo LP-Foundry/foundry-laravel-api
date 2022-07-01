@@ -39,6 +39,7 @@ Route::get('/internal-user', function () {
 
 Route::get('/user', 'UserController@index');
 Route::get('/user/{user}', 'UserController@show');
+Route::post('/user', 'UserController@store');
 Route::put('/user/{user}', 'UserController@update');
 Route::delete('/user/{user}', 'UserController@destroy');
 
