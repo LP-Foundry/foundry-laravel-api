@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\JsonReponse;
 use App\User;
+use App\InternalUser;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,16 @@ Route::get('/user', function () {
         'type' => 'test_test'
     ]);
     return $user;
+});
+
+Route::get('/internal-user', function () {
+    $internal_user = InternalUser::create([
+        'username' => 'test_username',
+        'email_address' => 'test_email@mail.com',
+        'first_name' => 'First',
+        'surname' => 'Last'
+    ]);
+    return $internal_user;
 });
 
 #Route::get('/user', 'UserController@index');
