@@ -26,6 +26,7 @@ Route::get('/user', function () {
 
 Route::get('/internal-user', function () {
     $internal_user = InternalUser::create([
+        'id' => 2,
         'username' => 'test_username',
         'email_address' => 'test_email@mail.com',
         'first_name' => 'First',
