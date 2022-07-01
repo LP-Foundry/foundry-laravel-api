@@ -2,17 +2,11 @@
 
 namespace App\Http\Controllers;
 
-#use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-#use Illuminate\Foundation\Bus\DispatchesJobs;
-#use Illuminate\Foundation\Validation\ValidatesRequests;
-#use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 use App\User;
 
 class UserController extends Controller
 {
-    #use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-    
     /**
      * Display a listing of the resource.
      * 
@@ -59,9 +53,8 @@ class UserController extends Controller
     {
         // update a user
         $user = User::find($id);
-        return $request->all();
-        #$user->update($request->all());
-        #return $post;
+        $user->update($request->all());
+        return $post;
     }
 
     /**

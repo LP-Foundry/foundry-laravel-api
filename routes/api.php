@@ -17,49 +17,7 @@ use App\InternalUser;
 |
 */
 
-/*
-Route::get('/user', function () {
-    $user = User::create([
-        'type' => 'test_test'
-    ]);
-    return $user;
-});
-
-Route::get('/internal-user', function () {
-    $internal_user = InternalUser::create([
-        'id' => 2,
-        'username' => 'test_username',
-        'email_address' => 'test_email@mail.com',
-        'first_name' => 'First',
-        'surname' => 'Last'
-    ]);
-    return $internal_user;
-});
-*/
-
-#Route::get('/user', 'UserController@index');
-#Route::get('/user/{user}', 'UserController@show');
-#Route::post('/user', 'UserController@store');
-#Route::put('/user/{user}', 'UserController@update');
-#Route::delete('/user/{user}', 'UserController@destroy');
-
 Route::resource('user', 'UserController');
-
-#Route::get('/user', 'UserController@index');
-#Route::post('/user', 'UserController@store');
-#Route::put('/user', 'UserController@update');
-#Route::delete('/user', 'UserController@destroy');
-
-/*
-Route::get('/user', function (Request $request) {
-    return 'test string response';
-    /*
-    return new \Illuminate\Http\JsonReponse([
-        'data' => 'test string response'
-    ]);
-    * /
-});
-*/
 
 /*
 Route::middleware('auth:api')->get('/user', function (Request $request) {
