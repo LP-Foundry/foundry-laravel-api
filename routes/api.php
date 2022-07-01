@@ -37,7 +37,7 @@ Route::get('/internal-user', function () {
 });
 */
 
-#Route::get('/user', 'UserController@index');
+#Route::get('/users', 'UserController@index');
 
 Route::resource('users', 'UserController');
 

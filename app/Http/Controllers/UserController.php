@@ -33,6 +33,7 @@ class UserController extends Controller
     public function store(Request $request)
     {
         // create a user
+        return 'store';
         return User::create($request->all());
     }
 
@@ -45,6 +46,7 @@ class UserController extends Controller
     public function show($id)
     {
         // show a user
+        return 'show';
         return User::find($id);
     }
 
@@ -59,6 +61,7 @@ class UserController extends Controller
     {
         // update a user
         $user = User::find($id);
+        return 'update';
         return $request->all();
         #$user->update($request->all());
         #return $post;
@@ -73,6 +76,7 @@ class UserController extends Controller
     public function destroy($id)
     {
         // delete a user
+        return 'delete';
         return User::destroy($id);
     }
 }
