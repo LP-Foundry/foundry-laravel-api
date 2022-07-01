@@ -59,8 +59,9 @@ class UserController extends Controller
     {
         // update a user
         $user = User::find($id);
-        $user->update($request->all());
-        return $post;
+        return $request->all();
+        #$user->update($request->all());
+        #return $post;
     }
 
     /**
