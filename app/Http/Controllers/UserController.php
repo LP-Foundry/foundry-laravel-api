@@ -21,6 +21,7 @@ class UserController extends Controller
     public function index()
     {
         // get all users
+        return 'index';
         return User::all();
     }
 
@@ -60,8 +61,8 @@ class UserController extends Controller
     public function update(Request $request, $id)
     {
         // update a user
-        $user = User::find($id);
         return 'update';
+        $user = User::find($id);
         return $request->all();
         #$user->update($request->all());
         #return $post;
