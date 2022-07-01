@@ -17,6 +17,7 @@ use App\InternalUser;
 |
 */
 
+/*
 Route::get('/user', function () {
     $user = User::create([
         'type' => 'test_test'
@@ -34,6 +35,9 @@ Route::get('/internal-user', function () {
     ]);
     return $internal_user;
 });
+*/
+
+Route::get('/user', 'UserController@index');
 
 #Route::get('/user', 'UserController@index');
 #Route::post('/user', 'UserController@store');
