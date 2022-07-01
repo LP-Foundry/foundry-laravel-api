@@ -15,14 +15,21 @@ use Illuminate\Http\JsonReponse;
 |
 */
 
+Route::get('/user', 'UserController@index');
+Route::post('/user', 'UserController@store');
+Route::put('/user', 'UserController@update');
+Route::delete('/user', 'UserController@destroy');
+
+/*
 Route::get('/user', function (Request $request) {
     return 'test string response';
     /*
     return new \Illuminate\Http\JsonReponse([
         'data' => 'test string response'
     ]);
-    */
+    * /
 });
+*/
 
 /*
 Route::middleware('auth:api')->get('/user', function (Request $request) {
