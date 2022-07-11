@@ -19,6 +19,7 @@ use App\InternalUser;
 
 Route::resource('user', 'UserController');
 Route::resource('internal-user', 'InternalUserController');
+Route::resource('external-user', 'ExternalUserController');
 
 /*
 Route::middleware('auth:api')->get('/user', function (Request $request) {
