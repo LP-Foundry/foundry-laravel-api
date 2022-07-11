@@ -21,7 +21,7 @@ Route::resource('user', 'UserController');
 Route::resource('internal-user', 'InternalUserController');
 Route::resource('external-user', 'ExternalUserController');
 
-Route::post('/login', 'InternalUserController@login');
+Route::post('/login', 'InternalUserLoginController@login');
 
 /*
 Route::middleware('auth:api')->get('/user', function (Request $request) {
