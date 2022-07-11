@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class InternalUser extends Model
+class ExternalUser extends Model
 {
     protected $fillable = [
         'id',
