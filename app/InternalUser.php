@@ -11,6 +11,7 @@ class InternalUser extends Model
         'username',
         'email_address',
         'first_name',
-        'surname'
+        'surname',
+        'password'
     ];
 }
