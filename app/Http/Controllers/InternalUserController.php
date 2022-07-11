@@ -54,7 +54,7 @@ class InternalUserController extends Controller
         // update an internal user
         $user = InternalUser::find($id);
         $user->update($request->all());
-        return $post;
+        return $user;
     }
 
     /**
